@@ -1,11 +1,6 @@
----
-title: "Chapter 18: Final Exam"
-date: today
-author: JP Gannon
-format: gfm
-execute:
-  enabled: true
----
+# Chapter 18: Final Exam
+JP Gannon
+2026-02-12
 
 ## Final Exam/Summative Assessment
 
@@ -14,16 +9,12 @@ chunks, adding more if needed. Be sure your code is well-formatted and
 commented appropriately.
 
 You are allowed to liberally copy and paste from the course
-notes/bookdown. There is no need to reinvent the wheel. You'll need to
+notes/bookdown. There is no need to reinvent the wheel. You’ll need to
 tweak things here or there to address the specific questions, but for
 the watershed delineation, fdc, and HBV parts, there is a LOT you can
 copy and paste from the course notes!
 
 Load the required packages here:
-
-```{r}
-
-```
 
 ## Part 1: McDonald Hollow
 
@@ -42,10 +33,6 @@ Show the watershed outline on this map over some sort of basemap that
 allows us to see terrain. This could be a hillshade or a default basemap
 from an open repository.
 
-```{r}
-
-```
-
 ### b. Make some plots of stage and specific conductivity.
 
 hint: you will have to join these two datasets to do this. Also, there
@@ -56,51 +43,31 @@ too high (in the 9 m range). Be sure to filter out that time period.
 Additionally, filter out any Conductivity values above 60
 microsiemens/cm.
 
-Data prep: You'll use "McDonald_Conductivity.csv" and
-"McDonald_Stage.csv" in the Data folder
+Data prep: You’ll use “McDonald_Conductivity.csv” and
+“McDonald_Stage.csv” in the Data folder
 
 Conductivity is in units of microsiemens per centimeter **(10 points)**
 
-```{r}
-
-```
-
 ### Plots to create:
 
-Stage and Specific Conductivity (y) v. Time (x) use facets or a composite plot.
-**(10 pts)**
-
-```{r}
-
-```
+Stage and Specific Conductivity (y) v. Time (x) use facets or a
+composite plot. **(10 pts)**
 
 A flow duration curve using the stage data. Be careful with your axis
 labels. **(10 pts)**
 
-```{r}
-
-```
-
 Stage (x) plotted against specific conductivity (y). **(10 pts)**
-
-```{r}
-
-```
 
 ## Part 2: HBV Calibration
 
 Calibrate the HBV model for watershed 3 at Hubbard Brook (same time
-period as in class) using the SNOW MELT data set to calibrate rather than discharge.
-Use a 1000 run Monte Carlo to do this.
+period as in class) using the SNOW MELT data set to calibrate rather
+than discharge. Use a 1000 run Monte Carlo to do this.
 
 For your best model run, calibrated to snow melt, calculate the NSE for
 DISCHARGE.
 
 Prep Data for the Model and load HBV function: **(10 pts)**
-
-```{r}
-
-```
 
 Calibrate HBV on snow with 1000 run monte carlo: **(10 pts)**
 
@@ -108,26 +75,15 @@ Calibrate HBV on snow with 1000 run monte carlo: **(10 pts)**
 this version you need to add Qobs1, because it has a DATE column. This
 allows you to bring in the snow data by joining on the DATE column.
 
-```{r}
-
-```
-
 ### Make two plots:
 
-a.  Time-series showing Observed and Modeled discharge **(5 pts)**
+1.  Time-series showing Observed and Modeled discharge **(5 pts)**
 
-    ```{r}
-
-    ```
-
-b.  Time-series showing Observed and Modeled snow **(5 pts)**
-
-    ```{r}
-
-    ```
+2.  Time-series showing Observed and Modeled snow **(5 pts)**
 
 Provide the snow NSE and the discharge NSE below. **(5 pts)**
 
 ### Answer the following question:
 
-Was the discharge NSE from calibrating on snow better or worse than when we calibrated on discharge? Why do you think this is? **(5 pts)**
+Was the discharge NSE from calibrating on snow better or worse than when
+we calibrated on discharge? Why do you think this is? **(5 pts)**

@@ -1,6 +1,11 @@
-# Chapter 18: Final Exam
-JP Gannon
-2026-02-12
+---
+title: 'Chapter 18: Final Exam'
+date: 2026-03-23T00:00:00.000Z
+authors:
+  - id: jpgannon
+github: https://github.com/VT-Hydroinformatics/18-Final-Summative-Assess
+---
+
 
 ## Final Exam/Summative Assessment
 
